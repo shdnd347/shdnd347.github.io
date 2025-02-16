@@ -21,7 +21,8 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    message: event.data
+                    message: event.data,
+                    nav: navigator
                 })
             });
         });
